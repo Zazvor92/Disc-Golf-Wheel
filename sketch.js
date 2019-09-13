@@ -42,11 +42,11 @@ function draw() {
   noStroke();
   fill(255, 0, 0);
   triangle(120, 0, 190, 15, 190, -15);
-  //r++;
+  r++;
 }
 
 function stop() {
-  if (l % 2 == 0) {
+  if (l % 2 == 1) {
     noLoop();
   } else {
     loop();
