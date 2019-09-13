@@ -1,14 +1,14 @@
 let options = ['   Driver','   Midrange','Off Hand FH','Off Hand BH',' Normal BH','  Normal FH','Tomahawk', 'Roller', '360 Spin', '       Putter', 'New Mando']
 let color = []
 let r = 0;
-let l = 1;
+let l = 0;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(400, 400);
   background(100);
   //Button
   button = createButton('Start / Stop');
-  button.position(width / 2 - 35, 765);
+  button.position(width / 2 - 35, 365);
   button.mousePressed(stop);
   frameRate(250)
   // Color values
@@ -18,7 +18,6 @@ function setup() {
       color[i][j] = random(20,240)
     }
   }
-  stop();
 }
 
 function draw() {
@@ -30,19 +29,19 @@ function draw() {
     push();
     fill(color[i][0], color[i][1], color[i][2]);
     rotate(radians(r * 45));
-    arc(0, 0, 700, 700, ((2 * PI) / options.length) * (i + 1), (2 * PI) / options.length);
+    arc(0, 0, 300, 300, ((2 * PI) / options.length) * (i + 1), (2 * PI) / options.length);
     pop();
     push();
     rotate(radians(r * 45));
     fill(255);
     rotate(((2 * PI) / options.length) * (i + 1) + PI / options.length);
-    textSize(22);
-    text(options[i], 150, 7)
+    textSize(18);
+    text(options[i], 40, 7)
     pop();
   }
   noStroke();
   fill(255, 0, 0);
-  triangle(250, 0, 380, 25, 380, -25);
+  triangle(120, 0, 190, 15, 190, -15);
   r++;
 }
 
