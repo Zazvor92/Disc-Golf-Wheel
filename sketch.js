@@ -1,4 +1,4 @@
-let options = ['   Driver','   Midrange''Off Hand FH','Off Hand BH',' Normal BH','  Normal FH','Tomahawk', 'Roller', '360 Spin', '       Putter', 'New Mando']
+let options = ['   Driver','   Midrange','Off Hand FH','Off Hand BH',' Normal BH','  Normal FH','Tomahawk', 'Roller', '360 Spin', '       Putter', 'New Mando']
 let color = []
 let r = 0;
 let l = 1;
